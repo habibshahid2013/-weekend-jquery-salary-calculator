@@ -8,34 +8,39 @@
     <script src="jquery-3.6.0.js"></script>
     <script src="client.js"></script>
    <link rel="stylesheet" href="style.css">
-<h1>Weekend Jquery Salary Calculator</h1>
+<h1> Monthly Cost Salary Calculator</h1>
 </head>
 <body>
-<form id="productForm">
+<form id="employeeForm">
 
 <input 
-    id="nameInput" 
+    id="firstNameInput" 
     type="text" 
-    placeholder="Name">
+    placeholder="First Name">
 <input 
-    id="colorInput"
-    type="text"
-    placeholder="Color">
+    id="lastNameInput" 
+    type="text" 
+    placeholder="Last Name">
+
+<input 
+    id="idInput"
+    type="numbers" 
+    placeholder="ID Number">
 
 <select 
-    id="sizeInput">
-    <option>tiny</option>
-    <option>small</option>
-    <option>medium</option>
-    <option>BIG BIG</option>
+    id="jobInput">
+    <option>Junior Network Engineer</option>
+    <option>Network Engineer</option>
+    <option>Network Engineer II</option>
+    <option>Senior Network Engineer</option>
 
 
 </select>
 
 <input 
     type="text" 
-    placeholder="Price" 
-    id="priceInput"
+    placeholder="Annual Salary" 
+    id="salaryInput"
     step="0.01">
 <button id="submitBtn">Submit!</button>
 
@@ -43,29 +48,36 @@
 <table>
     <thead>
         <tr>
-            <td>Product</td>
-            <td>Color</td>
-            <td>Size</td>
-            <td>Price</td>
+            <td>First Name</td>
+            <td>Last Name </td>
+            <td>ID</td>
+            <td>Job Title</td>
+            <td>Annual Salary</td>
+            <td></td>
         </tr>
-        <tbody id="productTable">
+        <tbody id="employeeTable">
         <tr>
-            <td>Bootcut Jeans</td>
+            <td>Micheal </td>
             <td>Black</td>
-            <td>Big Big</td>
-            <td>42.99</td>
+            <td>6545</td>
+            <td>Network Engineer</td>
+            <td>$75,000</td>
+            <td><button id="deleteBtn">Delete</button></td>
         </tr>
         <tr>
-            <td>Skinny Jeans</td>
-            <td>Tan</td>
-            <td>Big Big</td>
-            <td>34.99</td>
+            <td>Jason</td>
+            <td>Tanner</td>
+            <td>6767</td>
+            <td>Junior Network engineer</td>
+            <td>$55,000</td>
+            <td><button id="deleteBtn">Delete</button></td>
+
         </tr>
          </tbody>
     </thead>
 </table>
 <div>
-    Total value of inventory: $532.23
+    Total Monthly Cost: <span id="totalSalary">532.23</span> 
 </div>
     
 </body>
