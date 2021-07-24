@@ -11,10 +11,10 @@
 <h1>Weekend Jquery Salary Calculator</h1>
 </head>
 <body>
-<form>
+<form id="productForm">
 
 <input 
-    id="nameIput" 
+    id="nameInput" 
     type="text" 
     placeholder="Name">
 <input 
@@ -35,32 +35,38 @@
 <input 
     type="text" 
     placeholder="Price" 
-    id="priceInput">
+    id="priceInput"
+    step="0.01">
 <button id="submitBtn">Submit!</button>
 
 </form>
 <table>
     <thead>
         <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>Product</td>
+            <td>Color</td>
+            <td>Size</td>
+            <td>Price</td>
+        </tr>
+        <tbody id="productTable">
+        <tr>
+            <td>Bootcut Jeans</td>
+            <td>Black</td>
+            <td>Big Big</td>
+            <td>42.99</td>
         </tr>
         <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>Skinny Jeans</td>
+            <td>Tan</td>
+            <td>Big Big</td>
+            <td>34.99</td>
         </tr>
-        <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
+         </tbody>
     </thead>
 </table>
+<div>
+    Total value of inventory: $532.23
+</div>
     
 </body>
 </html>
