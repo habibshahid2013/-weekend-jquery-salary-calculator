@@ -7,7 +7,9 @@
     <title>Document</title>
     <script src="jquery-3.6.0.js"></script>
     <script src="client.js"></script>
+    <script src="events.js"></script>
    <link rel="stylesheet" href="style.css">
+
 <h1> Monthly Cost Salary Calculator</h1>
 </head>
 <body>
@@ -48,15 +50,15 @@
 <table>
     <thead>
         <tr>
-            <td>First Name</td>
-            <td>Last Name </td>
-            <td>ID</td>
-            <td>Job Title</td>
-            <td>Annual Salary</td>
-            <td></td>
+            <th>First Name</th>
+            <th>Last Name </th>
+            <th>ID</th>
+            <th>Job Title</th>
+            <th>Annual Salary</th>
+            <th></th>
         </tr>
         <tbody id="employeeTable">
-        <tr>
+        <!-- <tr>
             <td>Micheal </td>
             <td>Black</td>
             <td>6545</td>
@@ -72,13 +74,13 @@
             <td>$55,000</td>
             <td><button id="deleteBtn">Delete</button></td>
 
-        </tr>
+        </tr> -->
          </tbody>
     </thead>
 </table>
-<div>
-    Total Monthly Cost: <span id="totalSalary">532.23</span> 
-</div>
+<h3>
+    Total Monthly Cost: <span id="totalSalary">0.00</span>
+</h3>
     
 </body>
 </html>

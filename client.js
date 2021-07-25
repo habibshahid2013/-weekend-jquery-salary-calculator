@@ -12,7 +12,12 @@ function onReady(){
     $('#employeeForm').on('submit', onSubmit)
 
 //button to delete information
-    $('#deleteBtn').on('click', deleteFunction)
+    $(document).on('click', '#deleteBtn', deleteFunction)
+}
+
+function activationFunction(){
+    onsubmit();
+    deleteFunction();
 }
 
 function onSubmit(event){
@@ -53,30 +58,25 @@ function onSubmit(event){
             <td>${employee.jobID}</td>
             <td>${employee.jobTitle}</td>
             <td>$${employee.annualSalary}</td>
-            <td><button>Delete</button></td>
+            <td><button id= "deleteBtn">Delete</button></td>
         </tr>`
     );
     //calculate Monthly Cost
-    let monthlyCost = 0 
+    let annualSalaryCost = 0 
     for (let employee of allEmployees){
-        monthlyCost += employee.annualSalary;
-     if (monthlyCost > 20000){
-         $('#totalSalry').css('background-color', 'red');
-     }
+       annualSalaryCost += employee.annualSalary;
+    }
+    let monthlyCost = annualSalaryCost / 12;
+
+    if (monthlyCost > 20000) {
+        $('#totalSalary').css('background-color', 'red');
     }
 
-    $('#totalSalary').text(employee.annualSalary.toFixed(2));
+    $('#totalSalary').text(monthlyCost.toFixed(2));
    
     };
 
 function deleteFunction() {
-    $('#employeeTable').empty(` 
-         <tr>
-            <td>${employee.firstName}</td>
-            <td>${employee.lastName}</td>
-            <td>${employee.jobID}</td>
-            <td>${employee.jobTitle}</td>
-        </tr>`
-    )
-
+    $(this).closest("tr").remove()
+     
 };
