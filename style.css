@@ -10,6 +10,10 @@ h1{
     border: 13px solid rgb(19, 51, 70);
     border-radius: 50px;
 }
+
+h3{
+    text-align: center;
+}
 input, select{
     font-size: 15px;
     padding: 7px 15px;
