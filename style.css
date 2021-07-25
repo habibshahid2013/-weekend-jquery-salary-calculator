@@ -1,5 +1,5 @@
 body{
- background-color: aquamarine;
+ background-color: rgb(57, 165, 129);
 }
 h1{
     text-align: center;
@@ -7,13 +7,15 @@ h1{
     padding-bottom: 23px;
     margin: 35px 30px;
     font-size: 40px;
+    border: 13px solid rgb(19, 51, 70);
+    border-radius: 50px;
 }
 input, select{
     font-size: 15px;
     padding: 7px 15px;
     margin-right: 11px;
     margin-bottom: 10px;
-    border: burlywood
+    border: salmon;
 }
 
 form{
@@ -26,8 +28,21 @@ table{
     margin-top: 40px;
     margin-bottom: 10px;
     border: 1px solid black;
+    background-color: goldenrod;
 }
 tr, td{
     border: 1px solid black;
     font-size: 15px;
+}
+tr:nth-child(even) {
+    background-color: lightblue;
+}
+
+#submitBtn{
+    border-radius: 2px;
+    background-color: #4CAF50;
+}
+
+th{
+    background-color: lightslategray;
 }

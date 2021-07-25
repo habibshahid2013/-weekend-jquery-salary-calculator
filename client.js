@@ -60,7 +60,7 @@ function onSubmit(event){
             <td>$${employee.annualSalary}</td>
             <td><button id= "deleteBtn">Delete</button></td>
         </tr>`
-    );
+    )
     //calculate Monthly Cost
     let annualSalaryCost = 0 
     for (let employee of allEmployees){
