@@ -1,5 +1,6 @@
 console.log('testing JS 😀');
 
+//Global Variable.
 let allEmployees = []
 
 $(document).ready(onReady);
@@ -15,6 +16,7 @@ function onReady(){
     $(document).on('click', '#deleteBtn', deleteFunction)
 }
 
+//a function to allow everything to pass through it. 
 function activationFunction(){
     onsubmit();
     deleteFunction();

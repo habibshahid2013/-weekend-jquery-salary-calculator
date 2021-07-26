@@ -5,21 +5,21 @@ First Create repository:
 
 #Make a to-do list before writing script
 
-- [ ] Setup
-	- [ ] index.html setup
-	- [ ] stylesheet with some basic styles
-	- [ ] install jquery
-	- [ ] setup my own JS files
-- [ ] firms with feild for:
-	- [ ] product names
-	- [ ] color
-	- [ ] size
-	- [ ] Price
-- [ ] submit button.
-	- [ ] grab from values
-	- [ ] render a new table row
-- [ ] Delete a item
-- [ ] Calculate the tool in the inventory.
+- [x] Setup
+	- [x] index.html setup
+	- [x] stylesheet with some basic styles
+	- [x] install jquery
+	- [x] setup my own JS files
+- [x] firms with feild for:
+	- [x] product names
+	- [x] color
+	- [x] size
+	- [x] Price
+- [x] submit button.
+	- [x] grab from values
+	- [x] render a new table row
+- [x] Delete a item
+- [x] Calculate the tool in the inventory.
 
 
 
@@ -28,7 +28,7 @@ Example of how to make a good list:
 Making HTML: 
 
 1. add HTML 
-2. add html scrpit
+2. add html script
 3. add H1
 4. Test in the terminal
 5. Commit in Git -HUB
@@ -103,7 +103,7 @@ Install Jquery into VSCOde
 	1. script it 
 	2. test it 
 Install JS. File into VSCODE
-	1. SCript it 
+	1. Script it 
 	2. Test IT 
 	3. ADD $(Document).ready(onReady);
 	4. ADD Function on Ready(){log.console("so Ready")
